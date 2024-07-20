@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1710627178235
+Build-Jdk-Spec: 1.8
+Bundle-Activator: ec.osgi.Activator
+Bundle-Description: A simple web bundle
+Bundle-ManifestVersion: 2
+Bundle-Name: ec-osgi-web
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: ec-osgi-web
+Bundle-Version: 0.1.0
+Created-By: Apache Maven Bundle Plugin 5.1.6
+Export-Package: ec.osgi;uses:="ec.osgi.serviceapi,javax.servlet,javax.se
+ rvlet.http,org.osgi.framework";version="0.1.0"
+Import-Package: javax.servlet;version="[3.1,4)",javax.servlet.http;versi
+ on="[3.1,4)",org.osgi.service.http;version="[1.2,2)",org.osgi.framework
+ ;version="[1.8,2)",org.osgi.util.tracker;version="[1.5,2)",ec.osgi.serv
+ iceapi;version="[0.1,1)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.2.0.202202251641
+Web-ContextPath: /ec-osgi

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ec-app">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/" source-path="/ec-ejb/src/main/java"/>
+        <wb-resource deploy-path="/" source-path="/ec-ejb-web/src/main/java"/>
+        <property name="java-output-path" value="/ec-app/bin"/>
+    </wb-module>
+</project-modules>

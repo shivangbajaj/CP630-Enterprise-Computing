@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ec.lab</groupId>
+	<artifactId>ec-osgi-web</artifactId>
+	<version>0.1.0</version>
+	<packaging>bundle</packaging>
+	<name>ec-osgi-web</name>
+	<description>A simple web bundle</description>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.felix/maven-bundle-plugin -->
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>maven-bundle-plugin</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.karaf.tooling/karaf-maven-plugin -->
+		<dependency>
+			<groupId>org.apache.karaf.tooling</groupId>
+			<artifactId>karaf-maven-plugin</artifactId>
+			<version>4.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>ec.lab</groupId>
+			<artifactId>ec-osgi-service</artifactId>
+			<version>0.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>5.1.6</version>
+				<extensions>true</extensions>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<instructions>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Version>${project.version}</Bundle-Version>
+						<Bundle-Activator>ec.osgi.Activator</Bundle-Activator>
+						<Private-Package>ec.osgi.*</Private-Package>
+						<Web-ContextPath>/ec-osgi</Web-ContextPath>
+						<Import-Package>ec.osgi.serviceapi,javax.servlet,javax.servlet.http,org.osgi.service.http,org.osgi.framework,org.osgi.util.tracker</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

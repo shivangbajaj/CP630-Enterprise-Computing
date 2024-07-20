@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Web Application</title>
+</head>
+<body>
+    <h1>Stats Web Application</h1>
+    
+    <!-- Form for StatsSingletonServlet -->
+    <h2>Add Data to StatsSingletonServlet</h2>
+    <form action="/stats-web/add-data" method="GET">
+        <label for="singletonValue">Value:</label>
+        <input type="text" id="singletonValue" name="value" required>
+        <button type="submit">Add Data</button>
+    </form>
+
+    <!-- Form for StatsStatelessServlet -->
+    <h2>Get Statistics from StatsStatelessServlet</h2>
+    <form action="/stats-web/get" method="GET">
+        <label for="statelessQuery">Query (count, min, max, mean, std, summary):</label>
+        <input type="text" id="statelessQuery" name="value" required>
+        <button type="submit">Get Statistics</button>
+    </form>
+
+    <!-- Form for StatsStatefulServlet -->
+    <h2>Insert Data to StatsStatefulServlet</h2>
+    <form action="/stats-web/insert-data" method="GET">
+        <label for="statefulValue">Value:</label>
+        <input type="text" id="statefulValue" name="value" required>
+        <button type="submit">Insert Data</button>
+    </form>
+</body>
+</html>

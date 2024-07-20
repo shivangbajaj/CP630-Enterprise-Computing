@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ec.asgmt</groupId>
+	<artifactId>stats-osgi-consumer</artifactId>
+	<version>0.1.0</version>
+	<packaging>bundle</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.felix/maven-bundle-plugin -->
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>maven-bundle-plugin</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.karaf.tooling/karaf-maven-plugin -->
+		<dependency>
+			<groupId>org.apache.karaf.tooling</groupId>
+			<artifactId>karaf-maven-plugin</artifactId>
+			<version>4.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>ec.asgmt</groupId>
+			<artifactId>stats-osgi-service</artifactId>
+			<version>0.1.0</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>5.1.6</version>
+				<extensions>true</extensions>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<instructions>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Version>${project.version}</Bundle-Version>
+						<Bundle-Activator>stats.osgi.Activator</Bundle-Activator>
+						<Private-Package>stats.osgi</Private-Package>
+						<Import-Package>ec.stats,org.osgi.util.tracker,org.osgi.framework;version="1.3.0"</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,86 @@
+Mar 16, 2024 8:18:10 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: encode
+Mar 16, 2024 8:18:10 PM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+Mar 16, 2024 8:18:10 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 4.13.3
+Mar 16, 2024 8:18:10 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using C:\enterprise\workspace\remoting as a remoting work directory
+Mar 16, 2024 8:18:11 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/jenkins/]
+Mar 16, 2024 8:18:11 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Mar 16, 2024 8:18:11 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    52041
+  Identity:      9b:05:f4:48:9d:eb:b7:27:0d:45:b4:e5:6f:e9:d0:05
+Mar 16, 2024 8:18:11 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Mar 16, 2024 8:18:11 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:52041
+Mar 16, 2024 8:18:11 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Mar 16, 2024 8:18:11 PM org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader run
+INFO: Waiting for ProtocolStack to start.
+Mar 16, 2024 8:18:11 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 9b:05:f4:48:9d:eb:b7:27:0d:45:b4:e5:6f:e9:d0:05
+Mar 16, 2024 8:18:12 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+Mar 16, 2024 9:15:50 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Terminated
+Mar 16, 2024 9:16:02 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:16:14 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:16:26 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:16:38 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:16:50 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:17:03 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:17:15 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:17:27 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:17:39 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:17:51 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:18:03 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:18:15 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:18:27 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: connect
+Mar 16, 2024 9:18:42 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.SocketTimeoutException Read timed out
+Mar 16, 2024 9:18:52 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/jenkins/tcpSlaveAgentListener/. Will try again: response code=503
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Performing onReconnect operation.
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: onReconnect operation completed.
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/jenkins/]
+Mar 16, 2024 9:19:03 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    52777
+  Identity:      9b:05:f4:48:9d:eb:b7:27:0d:45:b4:e5:6f:e9:d0:05
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:52777
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Mar 16, 2024 9:19:03 PM org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader run
+INFO: Waiting for ProtocolStack to start.
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 9b:05:f4:48:9d:eb:b7:27:0d:45:b4:e5:6f:e9:d0:05
+Mar 16, 2024 9:19:03 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected

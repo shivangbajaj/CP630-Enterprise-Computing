@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1710804430736
+Build-Jdk-Spec: 1.8
+Bundle-Activator: stats.osgi.Activator
+Bundle-ManifestVersion: 2
+Bundle-Name: stats-osgi-consumer
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: stats-osgi-consumer
+Bundle-Version: 0.1.0
+Created-By: Apache Maven Bundle Plugin 5.1.6
+Export-Package: stats.osgi;uses:="org.osgi.framework";version="0.1.0"
+Import-Package: ec.stats;version="[0.1,1)",org.osgi.util.tracker;version
+ ="[1.5,2)",org.osgi.framework;version="1.3.0"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.2.0.202202251641

@@ -1,0 +1,150 @@
+
+C:\enterprise\workspace\a4>rem batch test 
+
+C:\enterprise\workspace\a4>echo A4 batch test 
+A4 batch test
+
+C:\enterprise\workspace\a4>echo username:hp 
+username:hp
+
+C:\enterprise\workspace\a4>echo CD 
+CD
+
+C:\enterprise\workspace\a4>start "mysql" cmd /k mysql_start 
+
+C:\enterprise\workspace\a4>timeout /t 5 /nobreak  1>nul 
+
+C:\enterprise\workspace\a4>cd rank-spring 
+
+C:\enterprise\workspace\a4\rank-spring>call mvn clean package -q 
+Letter grades for % grades from 66 to 100:
+66:F	67:F	68:F	69:F	70:B-	
+71:B-	72:B-	73:B	74:B	75:B	
+76:B	77:B+	78:B+	79:B+	80:A-	
+81:A-	82:A-	83:A-	84:A-	85:A	
+86:A	87:A	88:A	89:A	90:A+	
+91:A+	92:A+	93:A+	94:A+	95:A+	
+96:A+	97:A+	98:A+	99:A+	100:A+	
+
+Letter grades for % grades from 46 to 100:
+46:F	47:F	48:F	49:F	50:D-	
+51:D-	52:D-	53:D	54:D	55:D	
+56:D	57:D+	58:D+	59:D+	60:C-	
+61:C-	62:C-	63:C	64:C	65:C	
+66:C	67:C+	68:C+	69:C+	70:B-	
+71:B-	72:B-	73:B	74:B	75:B	
+76:B	77:B+	78:B+	79:B+	80:A-	
+81:A-	82:A-	83:A-	84:A-	85:A	
+86:A	87:A	88:A	89:A	90:A+	
+91:A+	92:A+	93:A+	94:A+	95:A+	
+96:A+	97:A+	98:A+	99:A+	100:A+	
+
+score:99, rank:1, grade:A+
+score:99, rank:1, grade:A+
+score:99, rank:1, grade:A+
+score:96, rank:4, grade:A+
+score:96, rank:4, grade:A+
+score:90, rank:6, grade:A+
+score:90, rank:6, grade:A+
+score:89, rank:8, grade:A
+score:89, rank:8, grade:A
+score:89, rank:8, grade:A
+score:86, rank:11, grade:A
+score:85, rank:12, grade:A
+score:85, rank:12, grade:A
+score:85, rank:12, grade:A
+score:84, rank:15, grade:A-
+score:84, rank:15, grade:A-
+score:83, rank:17, grade:A-
+score:82, rank:18, grade:A-
+score:81, rank:19, grade:A-
+score:79, rank:20, grade:B+
+score:77, rank:21, grade:B+
+score:75, rank:22, grade:B
+score:74, rank:23, grade:B
+score:73, rank:24, grade:B
+score:71, rank:25, grade:B-
+score:71, rank:25, grade:B-
+score:71, rank:25, grade:B-
+score:71, rank:25, grade:B-
+score:70, rank:29, grade:B-
+score:70, rank:29, grade:B-
+Prediction for score:76
+rank:22, grade:B
+
+
+B
+22
+7373985.084578935target\stats-osgi-service.jar
+1 File(s) copied
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< ec.asgmt:stats-osgi-consumer >--------------------
+[INFO] Building stats-osgi-consumer 0.1.0
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ stats-osgi-consumer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ stats-osgi-consumer ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.12.1:compile (default-compile) @ stats-osgi-consumer ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ stats-osgi-consumer ---
+[INFO] Copying 0 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.12.1:testCompile (default-testCompile) @ stats-osgi-consumer ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ stats-osgi-consumer ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.6:bundle (default-bundle) @ stats-osgi-consumer ---
+[INFO] Building bundle: C:\enterprise\workspace\a4\stats-osgi-consumer\target\stats-osgi-consumer.jar
+[INFO] Writing manifest: C:\enterprise\workspace\a4\stats-osgi-consumer\target\classes\META-INF\MANIFEST.MF
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.329 s
+[INFO] Finished at: 2024-03-18T19:18:08-04:00
+[INFO] ------------------------------------------------------------------------
+target\stats-osgi-consumer.jar
+1 File(s) copied
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< ec.asgmt:stats-osgi-web >-----------------------
+[INFO] Building stats-osgi-web 0.1.0
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ stats-osgi-web ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ stats-osgi-web ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.12.1:compile (default-compile) @ stats-osgi-web ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ stats-osgi-web ---
+[INFO] Copying 0 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.12.1:testCompile (default-testCompile) @ stats-osgi-web ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ stats-osgi-web ---
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.6:bundle (default-bundle) @ stats-osgi-web ---
+[INFO] Building bundle: C:\enterprise\workspace\a4\stats-osgi-web\target\stats-osgi-web.jar
+[INFO] Writing manifest: C:\enterprise\workspace\a4\stats-osgi-web\target\classes\META-INF\MANIFEST.MF
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.402 s
+[INFO] Finished at: 2024-03-18T19:18:13-04:00
+[INFO] ------------------------------------------------------------------------
+target\stats-osgi-web.jar
+1 File(s) copied
+
+{"count":7}
+{"mean":8.714285714285714}

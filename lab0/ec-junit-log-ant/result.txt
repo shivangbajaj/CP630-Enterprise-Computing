@@ -1,0 +1,21 @@
+Testsuite: ec.lab.CalTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.052 sec
+------------- Standard Output ---------------
+This is executed before each Test
+This is exceuted after each Test
+This is executed before each Test
+This is exceuted after each Test
+This is executed before each Test
+This is exceuted after each Test
+------------- ---------------- ---------------
+
+Testcase: testSum took 0.004 sec
+	FAILED
+expected:<6> but was:<7>
+junit.framework.AssertionFailedError: expected:<6> but was:<7>
+	at ec.lab.CalTest.testSum(CalTest.java:32)
+
+Testcase: testEqual took 0 sec
+	SKIPPED
+Testcase: testDivisionException took 0 sec
+Testcase: testDivison took 0 sec

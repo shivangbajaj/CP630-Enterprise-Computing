@@ -1,0 +1,13 @@
+FROM openjdk:8-jdk-alpine
+
+RUN mkdir enterprise
+
+RUN mkdir enterprise/model
+ADD model/* enterprise/model/
+
+RUN mkdir enterprise/data
+ADD data/* enterprise/data/
+
+WORKDIR /
+
+EXPOSE 8080

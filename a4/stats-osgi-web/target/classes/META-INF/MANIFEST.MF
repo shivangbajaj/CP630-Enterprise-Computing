@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1712527525627
+Build-Jdk-Spec: 1.8
+Bundle-Activator: stats.osgi.Activator
+Bundle-ManifestVersion: 2
+Bundle-Name: stats-osgi-web
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: stats-osgi-web
+Bundle-Version: 0.1.0
+Created-By: Apache Maven Bundle Plugin 5.1.6
+Export-Package: org.json;version=20210307,stats.osgi;uses:="ec.stats,jav
+ ax.servlet.http,org.osgi.framework";version="0.1.0"
+Import-Package: ec.stats;version="[0.1,1)",javax.servlet;version="[3.1,4
+ )",javax.servlet.http;version="[3.1,4)",org.osgi.service.http;version="
+ [1.2,2)",org.osgi.framework;version="[1.8,2)",org.osgi.util.tracker;ver
+ sion="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.2.0.202202251641
+Web-ContextPath: /stats-osgi

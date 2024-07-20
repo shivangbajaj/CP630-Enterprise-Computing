@@ -1,0 +1,46 @@
+
+C:\enterprise\workspace\a2>rem A2 batch test 
+
+C:\enterprise\workspace\a2>echo A2 batch test 
+A2 batch test
+
+C:\enterprise\workspace\a2>echo username:hp 
+username:hp
+
+C:\enterprise\workspace\a2>echo CD 
+CD
+
+C:\enterprise\workspace\a2>start "mysql" cmd /k mysql_start 
+
+C:\enterprise\workspace\a2>sleep 5 
+
+C:\enterprise\workspace\a2>start "wildfly" cmd /k standalone -c standalone-full.xml 
+
+C:\enterprise\workspace\a2>sleep 10 
+
+C:\enterprise\workspace\a2>cd stats-client 
+
+C:\enterprise\workspace\a2\stats-client>call mvn clean package -q 
+Deleted 1 record(s) from ecuser table for user: admin
+Record inserted into ecuser table successfully.
+User ID: 5
+Name: admin
+Password: cp630
+Role: 1
+Record inserted into ecmodel table successfully.
+Deleted 1 record(s) from ecmodel table for model: stats
+Sended to  queue: save
+Published Messaage topic: 10
+Message sent as : save
+Data published as : 10
+Deleted 9 record(s) from ecmodel table for model: mystats
+Model saved successfully!
+<html><body>
+<p>Model Name: mystats</p>
+<p>Queried Element: count</p>
+</body></html>
+<html><body>
+<p>Model Name: mystats</p>
+<p>Queried Element: mean</p>
+</body></html>
+END

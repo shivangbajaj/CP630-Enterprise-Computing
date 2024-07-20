@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Query</title>
+</head>
+<body>
+    <h1>Model Query</h1>
+    
+    
+    <h2>Save Model</h2>
+    <form action="/modelsave" method="post">
+        <label for="modelName">Model Name:</label>
+        <input type="text" id="modelName" name="modelName" required><br>
+        <label for="count">Count:</label>
+        <input type="number" id="count" name="count" required><br>
+        <label for="min">Min:</label>
+        <input type="number" id="min" name="min" required><br>
+        <label for="max">Max:</label>
+        <input type="number" id="max" name="max" required><br>
+        <label for="mean">Mean:</label>
+        <input type="number" id="mean" name="mean" required><br>
+        <label for="std">STD:</label>
+        <input type="number" id="std" name="std" required><br>
+        <button type="submit">Save Model</button>
+    </form>
+    
+    <!-- Form to Get Model -->
+    <h2>Get Model Property</h2>
+    <form action="/modelget" method="get">
+        <label for="modelNameGet">Model Name:</label>
+        <input type="text" id="modelNameGet" name="modelName" required><br>
+        <label for="query">Query:</label>
+        <input type="text" id="query" name="query" required><br>
+        <button type="submit">Get Model Property</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!-- index_sb_jms.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stateless Session Bean JMS Forms</title>
+</head>
+<body>
+    <h1>Stateless Session Bean JMS Forms</h1>
+    <form action="sbproducer" method="get">
+        <label for="saveMessage">Save Message:</label>
+        <input type="hidden" name="message" value="save">
+        <button type="submit">Send "save"</button>
+    </form>
+    <form action="sbpublisher" method="get">
+        <label for="dataMessage">Enter a Value:</label>
+        <input type="text" name="message" required placeholder="Enter a value">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml"
+   xmlns:h = "http://java.sun.com/jsf/html">
+   
+   <h:body>
+      <h2>This is Page2</h2>
+      <h:form>
+         <h:commandButton action = "home?faces-redirect = true" value = "Back To Home Page" />
+      </h:form>
+   
+   
+      <h2>Add and check model</h2>
+      <hr />
+      <h:form>
+         <h3>Add model</h3>
+         <h:commandButton action = "create-model" value = "Create" />
+         <h3>Check model</h3>
+         <h:commandButton action = "check-model?faces-redirect = true" value = "Check" />
+      </h:form>   
+   
+   
+   </h:body>
+</html>

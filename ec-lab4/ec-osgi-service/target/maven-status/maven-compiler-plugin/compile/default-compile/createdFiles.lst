@@ -1,0 +1,3 @@
+ec\osgi\Activator.class
+ec\osgi\serviceapi\CalculatorService.class
+ec\osgi\serviceimpl\CalculatorServiceImpl.class

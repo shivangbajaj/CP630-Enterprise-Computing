@@ -1,0 +1,4 @@
+Hello Spark
+Hello RDD
+Hello Scala
+This is a file for Spark.

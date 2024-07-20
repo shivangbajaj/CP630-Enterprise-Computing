@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: ec-osgi-web
+Bundle-Name: ec-osgi-web
+Bundle-Version: 1.0.0.qualifier
+Bundle-ManifestVersion: 2
+Bundle-Activator: ec.osgi.web.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: ec.osgi.serviceapi,ec.osgi.serviceimpl,javax.servlet;v
+ ersion="3.1.0",javax.servlet.http;version="3.1.0",org.osgi.framework;
+ version="1.3.0",org.osgi.service.http;version="1.2.1",org.osgi.util.t
+ racker;version="1.5.1"
+Web-ContextPath: /ec-osgi

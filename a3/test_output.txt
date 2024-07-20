@@ -1,0 +1,184 @@
+
+C:\enterprise\workspace\a3>rem batch test 
+
+C:\enterprise\workspace\a3>echo A3 batch test 
+A3 batch test
+
+C:\enterprise\workspace\a3>echo username:hp 
+username:hp
+
+C:\enterprise\workspace\a3>echo CD 
+CD
+
+C:\enterprise\workspace\a3>cd stats-app 
+
+C:\enterprise\workspace\a3\stats-app>call mvn clean install -q 
+[ERROR] COMPILATION ERROR : 
+[ERROR] /C:/enterprise/workspace/a3/stats-app/stats-ejb/src/main/java/ec/stats/sb/LRStateless.java:[29,19] no suitable method found for info(double[])
+    method java.util.logging.Logger.info(java.lang.String) is not applicable
+      (argument mismatch; double[] cannot be converted to java.lang.String)
+    method java.util.logging.Logger.info(java.util.function.Supplier<java.lang.String>) is not applicable
+      (argument mismatch; double[] cannot be converted to java.util.function.Supplier<java.lang.String>)
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project stats-ejb: Compilation failure
+[ERROR] /C:/enterprise/workspace/a3/stats-app/stats-ejb/src/main/java/ec/stats/sb/LRStateless.java:[29,19] no suitable method found for info(double[])
+[ERROR]     method java.util.logging.Logger.info(java.lang.String) is not applicable
+[ERROR]       (argument mismatch; double[] cannot be converted to java.lang.String)
+[ERROR]     method java.util.logging.Logger.info(java.util.function.Supplier<java.lang.String>) is not applicable
+[ERROR]       (argument mismatch; double[] cannot be converted to java.util.function.Supplier<java.lang.String>)
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :stats-ejb
+Count: 7
+Min: 2.0
+Max: 20.0
+Mean: 8.714285714285714
+Standard Deviation: 6.180945043652554
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.stats.ec/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="StatsWSImplService" targetNamespace="http://ws.stats.ec/">
+  <wsdl:message name="getMean">
+  </wsdl:message>
+  <wsdl:message name="getCount">
+  </wsdl:message>
+  <wsdl:message name="getCountResponse">
+    <wsdl:part name="return" type="xsd:int">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMaxResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMeanResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMinResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMin">
+  </wsdl:message>
+  <wsdl:message name="getSTDResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSTD">
+  </wsdl:message>
+  <wsdl:message name="getMax">
+  </wsdl:message>
+  <wsdl:portType name="StatsWS">
+    <wsdl:operation name="getMean">
+      <wsdl:input message="tns:getMean" name="getMean">
+    </wsdl:input>
+      <wsdl:output message="tns:getMeanResponse" name="getMeanResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMin">
+      <wsdl:input message="tns:getMin" name="getMin">
+    </wsdl:input>
+      <wsdl:output message="tns:getMinResponse" name="getMinResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCount">
+      <wsdl:input message="tns:getCount" name="getCount">
+    </wsdl:input>
+      <wsdl:output message="tns:getCountResponse" name="getCountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSTD">
+      <wsdl:input message="tns:getSTD" name="getSTD">
+    </wsdl:input>
+      <wsdl:output message="tns:getSTDResponse" name="getSTDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMax">
+      <wsdl:input message="tns:getMax" name="getMax">
+    </wsdl:input>
+      <wsdl:output message="tns:getMaxResponse" name="getMaxResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StatsWSImplServiceSoapBinding" type="tns:StatsWS">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getMean">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getMean">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMeanResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMin">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getMin">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMinResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCount">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getCount">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCountResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSTD">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getSTD">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSTDResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMax">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getMax">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMaxResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StatsWSImplService">
+    <wsdl:port binding="tns:StatsWSImplServiceSoapBinding" name="StatsWSImplPort">
+      <soap:address location="http://localhost:8080/stats-ws/StatsWSImpl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions><html><body>
+<h1>Statistics Summary Information</h1>
+<p>Count: 7</p>
+<p>Min: 2.0</p>
+<p>Max: 20.0</p>
+<p>Mean: 8.714285714285714</p>
+<p>Standard Deviation: 6.180945043652554</p>
+</body></html>
+{"count":7}{"max":20.0}{"mean":8.714285714285714}{"std":6.180945043652554}Linear regression model successfully generated and saved to C:/enterprise/tmp/model/weka_regression.bin
+Testing linear regression model...
+
+Correlation coefficient                  0.8663
+Mean absolute error                   4290.1357
+Root mean squared error               4795.5429
+Relative absolute error                 17.3992 %
+Root relative squared error             19.1726 %
+Total Number of Instances                3     
+
+Testing result saved to test_result.txt
+Predictions saved to result.txt
+Record with name 'weka-lr' deleted successfully from ecmodel table.
+Record inserted successfully into table: ecmodel
+Prediction: 219328.35717359098
+Prediction: 219328.35717359098
+END

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Web</title>
+</head>
+<body>
+    <h1>Stats Web</h1>
+
+    <form action="/stats-web/add-data" method="get">
+        <label for="addData">Add Data:</label>
+        <input type="text" name="value" id="addData" required>
+        <input type="submit" value="Add Data">
+    </form>
+
+     <form action="/stats-web/get" method="GET">
+        <label for="statelessQuery">Query:</label>
+        <select id="statelessQuery" name="value">
+            <option value="count">Count</option>
+            <option value="min">Minimum</option>
+            <option value="max">Maximum</option>
+            <option value="mean">Mean</option>
+            <option value="std">Standard Deviation</option>
+            <option value="summary">Summary</option>
+        </select>
+        <button type="submit">Get Statistics</button>
+    </form>
+
+    <form action="/stats-web/insert-data" method="get">
+        <label for="insertData">Insert Data:</label>
+        <input type="text" name="value" id="insertData" required>
+        <input type="submit" value="Insert Data">
+    </form>
+</body>
+</html>

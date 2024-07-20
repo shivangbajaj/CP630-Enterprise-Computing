@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression Prediction</title>
+</head>
+<body>
+    <h2>Linear Regression Prediction</h2>
+    <form action="/stats-web/predict" method="get">
+        <input type="hidden" id="modelName" name="name" value="weka-lr">
+        <label for="query">Query (comma-separated attributes):</label><br>
+        <textarea id="query" name="query" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

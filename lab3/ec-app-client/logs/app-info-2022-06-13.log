@@ -1,0 +1,14 @@
+[INFO ] 2022-06-13 02:09:17.648 [main] EJBEarClient - RMI of SBStateless
+[INFO ] 2022-06-13 02:09:17.697 [main] EJBEarClient - RMI of SBStateful
+[INFO ] 2022-06-13 02:09:17.737 [main] EJBEarClient - RMI of SBSingleton
+[INFO ] 2022-06-13 02:09:17.737 [main] EJBEarClient - RMI of ec-ejb is done!
+[INFO ] 2022-06-13 02:34:10.638 [main] EJBEarClient - RMI of SBStateless
+[INFO ] 2022-06-13 02:34:10.691 [main] EJBEarClient - RMI of SBStateful
+[INFO ] 2022-06-13 02:34:10.742 [main] EJBEarClient - RMI of SBSingleton
+[INFO ] 2022-06-13 02:34:10.743 [main] EJBEarClient - RMI of ec-ejb is done!
+[INFO ] 2022-06-13 19:56:04.151 [main] EJBEarClient - RMI of SBStateless
+[INFO ] 2022-06-13 19:56:04.214 [main] EJBEarClient - RMI of SBStateful
+[INFO ] 2022-06-13 19:56:04.254 [main] EJBEarClient - RMI of SBSingleton
+[INFO ] 2022-06-13 19:56:04.254 [main] EJBEarClient - RMI of ec-ejb is done!
+[INFO ] 2022-06-13 20:02:30.873 [main] ECJMSProducer - message sent
+[INFO ] 2022-06-13 20:04:55.463 [main] ECJMSProducer - message sent

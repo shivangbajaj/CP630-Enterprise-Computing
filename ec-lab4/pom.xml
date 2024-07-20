@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ec.lab</groupId>
+	<artifactId>cp630-lab4</artifactId>
+	<packaging>pom</packaging>
+	<version>0.1.0</version>
+	<modules>
+		<module>ec-osgi</module>
+		<module>ec-osgi-consumer</module>
+		<module>ec-osgi-service</module>
+		<module>ec-osgi-web</module>
+		<module>ec-spring</module>
+		<module>ec-spring-boot-jpa</module>
+		<module>ec-spring-boot-jsp</module>
+		<module>ec-spring-boot-jsp-wildfly</module>
+		<module>ec-spring-boot-MVC</module>
+		<module>ec-spring-boot-thymeleaf</module>
+		<module>ec-spring-MVC</module>
+	</modules>
+</project>

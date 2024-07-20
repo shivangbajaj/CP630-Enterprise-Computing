@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ec.lab</groupId>
+	<artifactId>cp630-lab2</artifactId>
+	<packaging>pom</packaging>
+	<version>0.1.0</version>
+	<modules>
+		<module>ec-app</module>
+		<module>ec-app-client</module>
+		<module>ec-db-client</module>
+		<module>ec-stats</module>
+		<module>ec-greeter</module>
+		<module>ec-jpa</module>
+		<module>jpa-example</module>
+	</modules>
+</project>

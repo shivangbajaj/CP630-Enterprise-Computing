@@ -1,0 +1,12 @@
+ec\stats\sb\StatsSingleton.class
+ec\stats\sb\StatsStateless.class
+ec\stats\sb\StatsSingletonRemote.class
+ec\stats\sb\StatsStatefulRemote.class
+ec\stats\sb\StatsStatelessLocal.class
+ec\stats\sb\StatsStateful.class
+ec\stats\StatsSummary.class
+ec\stats\DescriptiveStatistics.class
+ec\stats\sb\StatsStatefulLocal.class
+ec\stats\sb\StatsSummary.class
+ec\stats\sb\StatsSingletonLocal.class
+ec\stats\sb\StatsStatelessRemote.class

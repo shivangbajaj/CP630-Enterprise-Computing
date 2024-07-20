@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\enterprise\workspace\ec-lab4\ec-spring-boot-thymeleaf"/>
+			<item value="C:\enterprise\workspace\ec-lab4\ec-spring-boot-jpa"/>
+			<item value="C:\enterprise\workspace\ec-lab4\ec-spring-boot-jsp"/>
+			<item value="C:\enterprise\workspace\ec-lab4\ec-spring-MVC"/>
+			<item value="C:\enterprise\workspace\ec-lab4\ec-spring"/>
+			<item value="C:\enterprise\workspace\a3\ml-weka"/>
+			<item value="C:\enterprise\workspace\a3"/>
+			<item value="C:\enterprise\quickstart-18.0.1.Final\contacts-jquerymobile"/>
+			<item value="C:\enterprise\workspace\lab3\ec-web"/>
+			<item value="C:\enterprise\workspace\lab3\ec-app-client"/>
+			<item value="C:\enterprise\workspace\lab3\ec-jpa-jsf"/>
+			<item value="C:\enterprise\workspace\lab3\ec-jsf"/>
+			<item value="C:\enterprise\workspace\lab3\ec-jsp"/>
+			<item value="C:\enterprise\quickstart-18.0.1.Final\kitchensink-jsp"/>
+			<item value="C:\enterprise\quickstart-18.0.1.Final\helloworld-ws"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\enterprise\workspace\stats-app"/>
+			<item value="C:\enterprise\workspace\a1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="ec.asgmt"/>
+			<item value="ec.assignment1"/>
+			<item value="ec.assignment"/>
+			<item value="ec.lab"/>
+		</list>
+		<list key="name">
+			<item value="stats-web"/>
+			<item value="stats-ejb"/>
+			<item value="stats-app"/>
+			<item value="stats-mvn"/>
+			<item value="C web Servlet"/>
+		</list>
+		<list key="artifactId">
+			<item value="stats-web"/>
+			<item value="stats-app"/>
+			<item value="stats-ejb"/>
+			<item value="stats-mvn"/>
+			<item value="ec.assignment1"/>
+			<item value="ec-web"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

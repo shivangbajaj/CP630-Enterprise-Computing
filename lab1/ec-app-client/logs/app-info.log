@@ -1,0 +1,8 @@
+[INFO ] 2024-01-27 19:38:01.703 [main] EJBEarClient - RMI of SBStateless
+[INFO ] 2024-01-27 19:38:01.748 [main] EJBEarClient - RMI of SBStateful
+[INFO ] 2024-01-27 19:38:01.774 [main] EJBEarClient - RMI of SBSingleton
+[INFO ] 2024-01-27 19:38:01.774 [main] EJBEarClient - RMI of ec-ejb is done!
+[INFO ] 2024-01-27 19:43:43.260 [main] EJBEarClient - RMI of SBStateless
+[INFO ] 2024-01-27 19:43:43.289 [main] EJBEarClient - RMI of SBStateful
+[INFO ] 2024-01-27 19:43:43.311 [main] EJBEarClient - RMI of SBSingleton
+[INFO ] 2024-01-27 19:43:43.311 [main] EJBEarClient - RMI of ec-ejb is done!

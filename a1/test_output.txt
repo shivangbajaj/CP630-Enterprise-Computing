@@ -1,0 +1,105 @@
+
+C:\enterprise\workspace\a1>rem A1 batch test 
+
+C:\enterprise\workspace\a1>echo A1 batch test 
+A1 batch test
+
+C:\enterprise\workspace\a1>echo username:vaibhav 
+username:vaibhav
+
+C:\enterprise\workspace\a1>echo CD 
+CD
+
+C:\enterprise\workspace\a1>cd stats-mvn 
+
+C:\enterprise\workspace\a1\stats-mvn>call mvn clean -q 
+
+C:\enterprise\workspace\a1\stats-mvn>call java -jar target/stats-mvn.jar 
+Jan 29 23:14:08 EST 2024 ec.stats.MyStatistics main
+INFO: Count: 10000
+Jan 29 23:14:08 EST 2024 ec.stats.MyStatistics main
+INFO: Min: 1.0
+Jan 29 23:14:08 EST 2024 ec.stats.MyStatistics main
+INFO: Max: 10000.0
+Jan 29 23:14:08 EST 2024ec.stats.MyStatistics main
+INFO: Mean: 5000.5
+Jan 29 23:14:08 EST 2024 ec.stats.MyStatistics main
+INFO: STD: 2886.751331514372
+C:\enterprise\workspace\a1\stats-mvn>call mvn clean -q 
+
+C:\enterprise\workspace\a1\stats-app>call curl http://127.0.0.1:8080/stats-web/add-data?value=10 
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+Mon Jan 29 23:14:08 EST 2024<br>
+Web component to add data: <br>
+Value: 10.0<br>
+Count: 1<br>
+100    94  100    94    0     0    912      0 --:--:-- --:--:-- --:--:--   921
+
+
+C:\enterprise\workspace\a1\stats-app>call curl http://127.0.0.1:8080/stats-web/insert-data?value=10 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   109  100   109    0     0   3110      0 --:--:-- --:--:-- --:--:--  3205
+Mon Jan 29 23:14:08 EST 2024<br>
+ <br>
+Count: 2<br>
+Min: 10.0<br>
+Max: 10.0<br>
+Mean: 10.0<br>
+STD: 0.0<br>
+
+
+C:\enterprise\workspace\a1\stats-app>call curl http://127.0.0.1:8080/stats-web/get?value=count 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100    63  100    63    0     0  11630      0 --:--:-- --:--:-- --:--:-- 12600
+Mon Jan 29 23:14:08 EST 2024<br>
+Statistics: <br>
+Count: 2<br>
+
+C:\enterprise\workspace\a1\stats-app>cd .. 
+
+C:\enterprise\workspace\a1>cd stats-client 
+
+C:\enterprise\workspace\a1\stats-client>call mvn clean package -q 
+
+C:\enterprise\workspace\a1\stats-client>call java -jar target/stats-client.jar 
+Jan 29, 2024 23:14:08 PM org.jboss.naming.remote.client.InitialContextFactory <clinit>
+INFO: WFNAM00025: org.jboss.naming.remote.client.InitialContextFactory is deprecated; new applications should use org.wildfly.naming.client.WildFlyInitialContextFactory instead
+Jan 29, 2024 23:14:08 PM org.wildfly.naming.client.Version <clinit>
+INFO: WildFly Naming version 1.0.11.Final
+Jan 29, 2024 23:14:08 PM org.wildfly.security.Version <clinit>
+INFO: ELY00001: WildFly Elytron version 1.10.4.Final
+Jan 29, 2024 23:14:08 PM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.7.3.Final
+Jan 29, 2024 23:14:08 PM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.7.3.Final
+Jan 29, 2024 23:14:08 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.3.Final
+Jan 29, 2024 23:14:08 PM org.jboss.remoting3.EndpointImpl <clinit>
+INFO: JBoss Remoting version 5.0.15.Final
+Jan 29, 2024 23:14:08 PM ec.stats.StatsSBClientEar main
+INFO: Count: 2
+Jan 29, 2024 23:14:08 PM ec.stats.StatsSBClientEar main
+INFO: Mean: 10.0
+Jan 29, 2024 23:14:08 PM ec.stats.StatsSBClientEar main
+INFO: 
+Count: 102<br>
+Min: 1.0<br>
+Max: 100.0<br>
+Mean: 49.70588235294117<br>
+STD: 29.128043301505762<br>
+
+C:\enterprise\workspace\a1\stats-client>cd .. 
+
+C:\enterprise\workspace\a1>cd stats-app 
+
+C:\enterprise\workspace\a1\stats-app>call mvn wildfly:undeploy -q 
+END

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: ec-osgi
+Bnd-LastModified: 1710624568816
+Build-Jdk-Spec: 1.8
+Bundle-Activator: ec.osgi.Activator
+Bundle-Description: A simple testing OSGi project with maven-bundle-plug
+ in
+Bundle-ManifestVersion: 2
+Bundle-Name: ec-osgi
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: ec-osgi
+Bundle-Version: 0.1.0
+Created-By: Apache Maven Bundle Plugin 5.1.6
+Export-Package: ec.osgi;uses:="org.osgi.framework";version="0.1.0"
+Import-Package: org.osgi.framework;version="[1.8,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.2.0.202202251641

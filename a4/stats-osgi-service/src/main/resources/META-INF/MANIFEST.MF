@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: stats-osgi-service
+Bundle-Version: 1.0.0.qualifier
+Bundle-Name: stats-osgi-service
+Bundle-Activator: ec.stats.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: ec.stats
+Import-Package: org.osgi.framework;version="1.3.0",
+ org.osgi.util.tracker;version="1.3.1"

@@ -1,0 +1,6 @@
+ec\db\DBClientInsert.class
+ec\stats\StatsSummary.class
+ec\db\DBClientCreate.class
+ec\db\DBClient.class
+ec\db\DBClientDrop.class
+ec\db\DBClientSelect.class

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1712527504047
+Build-Jdk-Spec: 1.8
+Bundle-Activator: ec.osgi.Activator
+Bundle-Description: A Simple Bundle with Maven
+Bundle-ManifestVersion: 2
+Bundle-Name: ec-osgi-service
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: ec-osgi-service
+Bundle-Version: 0.1.0
+Created-By: Apache Maven Bundle Plugin 5.1.6
+Export-Package: ec.osgi.serviceapi;version="0.1.0"
+Import-Package: org.osgi.framework;version="[1.8,2)",org.osgi.util.track
+ er;version="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.2.0.202202251641

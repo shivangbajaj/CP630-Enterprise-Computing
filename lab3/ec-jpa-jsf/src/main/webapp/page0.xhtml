@@ -1,0 +1,75 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml"
+   xmlns:f = "http://java.sun.com/jsf/core"
+   xmlns:h = "http://java.sun.com/jsf/html">
+
+   <h:body>
+      <h2>1. Implicit Navigation</h2>
+      <hr />
+      
+      <h:form>
+         <h3>Using Managed Bean</h3>
+         <h:commandButton action = "#{navigationController.moveToPage2}" value = "Page2" />
+         
+         <h3>Using JSF outcome</h3>
+         <h:commandButton action = "page3" value = "Page3" />
+      </h:form>
+      <br/>
+      
+      <h2>2. Conditional Navigation</h2>
+      <hr />
+      <h:form>
+         <h:commandLink action = "#{navigationController.showPage}" value="Page1">
+            <f:param name = "pageId" value = "1" />
+         </h:commandLink> 
+         <h:commandLink action = "#{navigationController.showPage}"  value="Page2">
+            <f:param name = "pageId" value = "2" />
+         </h:commandLink> 
+         <h:commandLink action = "#{navigationController.showPage}" value = "Page3">
+            <f:param name = "pageId" value = "3" />
+         </h:commandLink>
+      </h:form>
+      <br/>
+      
+      <h2>3. Form Action Navigation</h2>
+      <hr />
+      
+      <h:form>
+         <h:commandLink action = "#{navigationController.processPage1}" value = "Page1" />  
+         <h:commandLink action = "#{navigationController.processPage2}" value = "Page2" />
+      </h:form>
+      <br/>
+      
+      <h2>4. Forward and Redirection Navigation</h2>
+      <hr />
+      <h:form>
+         <h3>Forward</h3>
+         <h:commandButton action = "page2" value = "Page2" />
+         
+         <h3>Redirect</h3>
+         <h:commandButton action = "page3?faces-redirect = true" value = "Page3" />
+      </h:form>
+      
+      <h2>Example: add and greet user</h2>
+      <hr />
+      <h:form>
+         <h3>Add user</h3>
+         <h:commandButton action = "create" value = "Create" />
+         <h3>Greeting user</h3>
+         <h:commandButton action = "greet?faces-redirect = true" value = "Greet" />
+      </h:form>
+      
+       <h2>Example: add and check model</h2>
+      <hr />
+      <h:form>
+         <h3>Add model</h3>
+         <h:commandButton action = "create-model" value = "Create" />
+         <h3>Check model</h3>
+         <h:commandButton action = "check-model?faces-redirect = true" value = "Check" />
+      </h:form>   
+     
+   </h:body>
+</html>
